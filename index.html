@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html to jpg convert</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="c-container">
+        <div class="html2jpg-container">
+            <div class="input-field">
+                <span class="top-title">Set Revision</span><br>
+                <input type="text" id="c-title" placeholder="Revision 1" style="width: 100%;"><br>
+                <input type="file" onchange="preview_show(event)" id="c-image" style="width: 100%;"><br>
+                <input type="button" value="Convert" id="convert-btn">
+            </div>
+            <div id="preview-img">
+                <h3 class="preview-title">Preview</h3>
+                <div id="preview-container">
+                    <img id="preview-image" alt="image">
+                    <div class="revision-name">
+                        <h4 id="rev-title">Revision 1</h4>
+                    </div>
+                </div>
+                <!-- <a href="#" id="image-download"><i class="fa-solid fa-download"></i></a> -->
+
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.4.1.min.js "></script>
+    <script src="assets/js/html2canvas.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
